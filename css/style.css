@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* common */
 body{
     font-family: 'Lato', sans-serif;
 }
@@ -11,6 +12,11 @@ body{
     margin: auto;
     max-width: 1200px;
 }
+h4{
+    color: blueviolet;
+}
+
+
 
 .container_logo{
     display: flex;
