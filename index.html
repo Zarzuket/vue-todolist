@@ -14,13 +14,14 @@
                 <img class="logo_img" src="img/logo.png" alt="logo boolean">
             </div>
             <div class="container_input">
-                <input type="text" name="" id="" class="todo_input" placeholder="Nuovo Todo">
-                <button class="btn">Add</button>
+                <input v-model="newTodo" type="text" class="todo_input" placeholder="Nuovo Todo" @keyup.enter="addTodo()">
+                <button @click="addTodo()" class="btn">Add</button>
             </div>
             <div class="container_todo_list">
-                <ul class="todo_list">
-                    <li v-for="todo in todos">{{todo}}<i class="fas fa-times"></i></li>
+                <ul v-if="todos.length > 0" class="todo_list">
+                    <li v-for="(todo,index) in todos">{{todo}}<i @click="removeTodo(index)" class="fas fa-times"></i></li>
                 </ul>
+                <h4 v-else>Free For Now zzz..</h4>
             </div>
         </div>
 
