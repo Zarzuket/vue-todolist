@@ -50,6 +50,17 @@ li{
     color: red;
 }
 
+.fa-check{
+    padding-left: 5px;
+}
+
+.fa-times{
+    margin-left: auto;
+}
+.green{
+    color: green;
+    text-decoration:line-through;
+}
 /* input + button */
 
 .btn{
